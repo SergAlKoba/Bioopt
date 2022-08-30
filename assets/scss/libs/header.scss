@@ -1,0 +1,303 @@
+.header{
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    display: none;
+    position: absolute;
+    @media (min-width: 768px) {
+        
+    }
+    @media (min-width: 1024px) {
+        
+    }
+    @media (min-width: 1320px) {
+        display: block;
+        padding: 30px 0;
+        .header_content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            .logo{
+                width: 150px;
+                margin-right: 30px;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .cities{
+                cursor: pointer;
+                display: flex;
+                margin-right: 30px;
+                position: relative;
+                align-items: center;
+                padding-right: 16px;
+                &:hover{
+                    &::after{
+                        transform: translate(0, -50%) rotate(180deg);
+                    }    
+                }
+                &::after{
+                    content: '';
+                    top: 50%;
+                    right: 0;
+                    width: 9px;
+                    height: 5px;
+                    position: absolute;
+                    background: url('../img/drop.svg') no-repeat 50% 50%;
+                    background-size: cover;
+                    transform: translate(0, -50%);
+                    transition: all 0.3s;
+                }
+                img{
+                    width: 20px;
+                    display: block;
+                    margin-right: 5px;
+                }
+                h4{
+                    padding: 8px 0;
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    line-height: 20px;
+                    align-items: center;
+                    span{
+                        margin-left: 5px;
+                        display: inline-block;
+                    }
+                }
+                ul{
+                    display: none;
+                }
+            }
+            nav{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        margin: 0 7px;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        a{
+                            padding: 8px 0;
+                            font-size: 14px;
+                            color: #FFFFFF;
+                            font-weight: 500;
+                            line-height: 20px;
+                            position: relative;
+                            display: inline-block;
+                            font-family: 'Avenir Next Medium';
+                            &:hover{
+                                &::after{
+                                    width: 100%;
+                                }    
+                            }
+                            &::after{
+                                content: '';
+                                left: 0;
+                                width: 0;
+                                bottom: 0;
+                                height: 1px;
+                                position: absolute;
+                                background: #71E7AB;
+                                transition: all 0.3s;
+                            }
+                        }
+                        ul{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .tel_languages{
+            display: flex;
+            align-items: center;
+            .tel{
+                font-size: 18px;
+                display: flex;
+                font-weight: 400;
+                color: #FFFFFF;
+                line-height: 24px;
+                margin-right: 25px;
+                align-items: center;
+                font-family: 'Conv_NicoMoji-Regular';
+                transition: all 0.3s;
+                &:hover{
+                    color: #71E7AB;
+                }
+                img{
+                    width: 17px;
+                    margin-right: 6px;
+                    transform: translate(0, 2px);
+                }
+            }
+            .languages{
+                cursor: pointer;
+                position: relative;
+                padding-right: 16px;
+                &:hover{
+                    &::after{
+                        transform: translate(0, -50%) rotate(180deg);
+                    }    
+                }
+                &::after{
+                    content: '';
+                    top: 50%;
+                    right: 0;
+                    width: 9px;
+                    height: 5px;
+                    position: absolute;
+                    background: url('../img/drop.svg') no-repeat 50% 50%;
+                    background-size: cover;
+                    transform: translate(0, -50%);
+                    transition: all 0.3s;
+                }
+                span{
+                    padding: 8px 0;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    line-height: 20px;
+                }
+                li{
+                    ul{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1420px) {
+        padding: 30px 0;
+        .menu {
+            .logo {
+                width: 190px;
+                margin-right: 28px;
+            }
+            .cities {
+                padding-right: 20px;
+                transform: translate(0, 3px);
+                &::after{
+                    width: 10px;
+                    height: 6px;
+                }
+                img {
+                    width: 20px;
+                    margin-right: 8px;
+                }
+                h4 {
+                    font-size: 16px;
+                    line-height: 20px;
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            nav{
+                transform: translate(0, 3px);
+                ul{
+                    li{
+                        a{
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .tel_languages{
+            transform: translate(0, 3px);
+            .languages{
+                padding-right: 18px;
+                &::after{
+                    width: 10px;
+                    height: 6px;
+                }
+                span {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            .tel {
+                font-size: 22px;
+                line-height: 22px;
+                img {
+                    width: 18px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1680px) {
+        padding: 40px 0;
+        .header_content{
+            margin: 0 -20px;
+        }
+        .menu {
+            .logo {
+                width: 260px;
+                margin-right: 52px;
+            }
+            .cities {
+                margin-right: 60px;
+            }
+            nav {
+                ul {
+                    li {
+                        margin: 0 15px;
+                        a {
+                            font-size: 19px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .tel_languages {
+            .tel {
+                font-size: 30px;
+                line-height: 32px;
+                img {
+                    width: 24px;
+                    margin-right: 18px;
+                }
+            }
+            .languages {
+                padding-right: 22px;
+                span {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+.header_mobile{
+    display: none;
+    @media (min-width: 768px) {
+        
+    }
+    @media (min-width: 1024px) {
+        
+    }
+    @media (min-width: 1320px) {
+        
+    }
+    @media (min-width: 1400px) {
+        
+    }
+    @media (min-width: 1680px) {
+        
+    }
+}
+
