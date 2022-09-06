@@ -12,6 +12,12 @@ var $doc = $(document);
             byRow: false
         });
 
+        $('.gallery_slider').slick({
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+
         if($(window).width() < 768){
             
             $('.our_team_slider').slick({
@@ -21,6 +27,8 @@ var $doc = $(document);
             });
 
         }
+
+        jcf.replaceAll();
 
     });
 
