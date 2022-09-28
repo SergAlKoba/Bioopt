@@ -1,0 +1,126 @@
+@import 'libs/messengers';
+
+.header{
+    background: #333333;
+}
+
+.reviews{
+    padding: 5px 0 25px;
+    .reviews_content{
+        h2{
+            font-size: 24px;
+            color: #333333;
+            font-weight: 500;
+            line-height: 33px;
+            padding-left: 23px;
+            position: relative;
+            font-family: 'Avenir Next Medium';
+            &::after{
+                content: '';
+                left: 0;
+                top: 6px;
+                width: 2px;
+                height: 24px;
+                position: absolute;
+                background: linear-gradient(180deg, #6BDDC7 0%, #71E7AB 100%);
+            }
+        }
+    }
+    .leave_reviews{
+        h2{
+            font-size: 24px;
+            color: #333333;
+            font-weight: 500;
+            line-height: 33px;
+            padding-left: 23px;
+            position: relative;
+            font-family: 'Avenir Next Medium';
+            &::after{
+                content: '';
+                left: 0;
+                top: 6px;
+                width: 2px;
+                height: 24px;
+                position: absolute;
+                background: linear-gradient(180deg, #6BDDC7 0%, #71E7AB 100%);
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 20px 0 80px;
+        .reviews_content{
+            h2 {
+                font-size: 44px;
+                line-height: 60px;
+                padding-left: 26px;
+                &::after{
+                    top: 9px;
+                    width: 6px;
+                    height: 45px;
+                }
+            }
+        }
+        .leave_reviews{
+            h2 {
+                font-size: 44px;
+                line-height: 60px;
+                padding-left: 26px;
+                &::after{
+                    top: 9px;
+                    width: 6px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        
+    }
+    @media (min-width: 1320px) {
+        padding: 38px 0 2px;
+        .reviews_content {
+            margin-bottom: 80px;
+            h2 {
+                font-size: 58px;
+                line-height: 79px;
+                padding-left: 27px;
+                &::after {
+                    top: 18px;
+                }
+            }
+        }
+        .leave_reviews {
+            h2 {
+                font-size: 58px;
+                line-height: 79px;
+                padding-left: 27px;
+                &::after {
+                    top: 18px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1680px) {
+        padding: 38px 0 5px;
+        .reviews_content{
+            padding: 0 120px;
+            h2{
+                font-size: 64px;
+                line-height: 87px;
+                &::after{
+                    top: 20px;
+                }
+            }
+        }
+        .leave_reviews{
+            padding: 0 120px;
+            h2{
+                font-size: 64px;
+                line-height: 87px;
+                &::after{
+                    top: 20px;
+                }
+            }
+        }
+    }
+}

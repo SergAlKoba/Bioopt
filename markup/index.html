@@ -13,11 +13,89 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <div class="header_mobile">
+    <div class="top_nav">
+        <div class="container">
+            <div class="header_top">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+                <div class="tel_cities">
+                    <div class="cities">
+                        <img src="img/map-pin.svg" alt="" class="map-pin">
+                        <h4><span>Харьков</span></h4>
+                        <ul>
+                            <li><a href="javascript:void(0)">Киев</a></li>
+                            <li class="active"><a href="javascript:void(0)">Харьков</a></li>
+                            <li><a href="javascript:void(0)">Запорожье</a></li>
+                            <li><a href="javascript:void(0)">Львов</a></li>
+                            <li><a href="javascript:void(0)">Чернигов</a></li>
+                            <li><a href="javascript:void(0)">Сумы</a></li>
+                        </ul>
+                    </div>
+                    <a href="tel:0 (800) 75-56-20" class="tel"><img src="img/tel.svg" alt="">0 (800) 75-56-20</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_nav">
+        <div class="container">
+            <div class="header_menu">
+                <div class="menu_open open_mobile"><img src="img/icin_menu.svg" alt=""> Меню</div>
+                <ul class="languages">
+                    <li><span>Ru</span>
+                        <ul>
+                            <li><a href="javascript:void(0)">En</a></li>
+                            <li><a href="javascript:void(0)">Ru</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nav_mobile">
+    <div class="logo">
+        <a href="index.html"><img src="img/logo.svg" alt=""></a>
+        <span class="close_menu"><img src="img/close.svg" alt=""></span>
+    </div>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li>
+                <a href="javascript:void(0)">Товары</a>
+                <ul>
+                    <li><a href="products.html">Тофробрикет</a></li>
+                    <li><a href="javascript:void(0)">Пеллеты из отходов подсолнечника;</a></li>
+                    <li><a href="javascript:void(0)">Пеллеты древесные;</a></li>
+                    <li><a href="javascript:void(0)">Пеллеты из соломы.</a></li>
+                    <li><a href="javascript:void(0)">Брикеты RUF;</a></li>
+                    <li><a href="javascript:void(0)">Брикеты PINI-KEY;</a></li>
+                    <li><a href="javascript:void(0)">Брикеты NESTRO древесные;</a></li>
+                    <li><a href="javascript:void(0)">Брикеты из лузги подсолнечника.</a></li>
+                    <li><a href="javascript:void(0)">Пеллеты из лузги подсолненчика;</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0)">О нас</a>
+                <ul>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="javascript:void(0)">Протоколы испытаний</a></li>
+                    <li><a href="javascript:void(0)">Доставка и оплата</a></li>
+                    <li><a href="javascript:void(0)">Блог</a></li>
+                </ul>
+            </li>
+            <li><a href="wholesale.html">Оптовым покупателям</a></li>
+            <li><a href="javascript:void(0)">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+
+<header class="header">
     <div class="container">
         <div class="header_content">
             <div class="menu">
                 <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+                <div class="menu_open menu_desc"><img src="img/icin_menu.svg" alt=""> Меню</div>
                 <div class="cities">
                     <img src="img/map-pin.svg" alt="" class="map-pin">
                     <h4>Город: <span>Харьков</span></h4>
@@ -33,8 +111,30 @@
                 <nav>
                     <ul>
                         <li class="active"><a href="index.html">Главная</a></li>
-                        <li><a href="products.html">Товары</a></li>
-                        <li><a href="about.html">О нас</a></li>
+                        <li>
+                            <a href="javascript:void(0)">Товары</a>
+                            <ul>
+                                <li><a href="products.html">Тофробрикет</a></li>
+                                <li><a href="javascript:void(0)">Пеллеты из отходов подсолнечника;</a></li>
+                                <li><a href="javascript:void(0)">Пеллеты древесные;</a></li>
+                                <li><a href="javascript:void(0)">Пеллеты из соломы.</a></li>
+                                <li><a href="javascript:void(0)">Брикеты RUF;</a></li>
+                                <li><a href="javascript:void(0)">Брикеты PINI-KEY;</a></li>
+                                <li><a href="javascript:void(0)">Брикеты NESTRO древесные;</a></li>
+                                <li><a href="javascript:void(0)">Брикеты из лузги подсолнечника.</a></li>
+                                <li><a href="javascript:void(0)">Пеллеты из лузги подсолненчика;</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">О нас</a>
+                            <ul>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="javascript:void(0)">Протоколы испытаний</a></li>
+                                <li><a href="javascript:void(0)">Доставка и оплата</a></li>
+                                <li><a href="javascript:void(0)">Блог</a></li>
+                            </ul>
+                        </li>
+                        <!-- about.html -->
                         <li><a href="wholesale.html">Оптовым покупателям</a></li>
                         <li><a href="javascript:void(0)">Контакты</a></li>
                     </ul>
@@ -45,8 +145,8 @@
                 <ul class="languages">
                     <li><span>Ru</span>
                         <ul>
-                            <li>En</li>
-                            <li>Ru</li>
+                            <li><a href="javascript:void(0)">En</a></li>
+                            <li><a href="javascript:void(0)">Ru</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -271,7 +371,7 @@
                     <li><a href="products.html">Товары</a></li>
                     <li><a href="about.html">О нас</a></li>
                     <li><a href="wholesale.html">Оптовым покупателям</a></li>
-                    <li><a href="javascript:void(0)">Отзывы</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
                     <li><a href="javascript:void(0)">Протоколы испытаний</a></li>
                     <li><a href="javascript:void(0)">Доставки товара и оплата</a></li>
                     <li><a href="javascript:void(0)">Политика конфидециальности</a></li>
