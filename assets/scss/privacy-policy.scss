@@ -1,0 +1,114 @@
+@import 'libs/messengers';
+
+.header{
+    background: #333333;
+}
+
+.privacy_policy{
+    padding: 5px 0 50px;
+    .privacy_policy_content{
+        h2{
+            font-size: 24px;
+            color: #333333;
+            font-weight: 500;
+            line-height: 33px;
+            padding-left: 23px;
+            position: relative;
+            margin-bottom: 30px;
+            font-family: 'Avenir Next Medium';
+            &::after{
+                content: '';
+                left: 0;
+                top: 6px;
+                width: 2px;
+                height: 24px;
+                position: absolute;
+                background: linear-gradient(180deg, #6BDDC7 0%, #71E7AB 100%);
+            }
+        }
+        article{
+            margin-bottom: 30px;
+            h3{
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+                line-height: 22px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-family: 'Avenir Next Medium';
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                color: #1E1E1E;
+                line-height: 24px;
+                padding-bottom: 10px;
+                a{
+                    color: #6bddc7;
+                }
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 20px 0 100px;
+        .privacy_policy_content{
+            h2 {
+                font-size: 44px;
+                line-height: 60px;
+                padding-left: 26px;
+                margin-bottom: 40px;
+                &::after{
+                    top: 9px;
+                    width: 6px;
+                    height: 45px;
+                }
+            }
+            article{
+                margin-bottom: 50px;
+                h3{
+                    font-size: 24px;
+                    line-height: 33px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    padding-bottom: 15px
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        
+    }
+    @media (min-width: 1320px) {
+        padding: 38px 0 100px;
+        .privacy_policy_content {
+            margin-bottom: 80px;
+            h2 {
+                font-size: 58px;
+                line-height: 79px;
+                padding-left: 27px;
+                margin-bottom: 50px;
+                &::after {
+                    top: 18px;
+                }
+            }
+            
+        }
+    }
+    @media (min-width: 1680px) {
+        padding: 38px 0 100px;
+        .privacy_policy_content{
+            padding: 0 120px;
+            h2{
+                font-size: 64px;
+                line-height: 87px;
+                &::after{
+                    top: 20px;
+                }
+            }
+        }
+    }
+}
