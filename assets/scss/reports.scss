@@ -1,0 +1,141 @@
+@import 'libs/messengers';
+
+.header{
+    background: #333333;
+}
+
+.reports{
+    padding: 5px 0 50px;
+    .reports_content{
+        h2{
+            font-size: 24px;
+            color: #333333;
+            font-weight: 500;
+            line-height: 33px;
+            padding-left: 23px;
+            position: relative;
+            margin-bottom: 50px;
+            font-family: 'Avenir Next Medium';
+            &::after{
+                content: '';
+                left: 0;
+                top: 6px;
+                width: 2px;
+                height: 24px;
+                position: absolute;
+                background: linear-gradient(180deg, #6BDDC7 0%, #71E7AB 100%);
+            }
+        }
+        ul{
+            li{
+                margin-bottom: 20px;
+                a{
+                    display: flex;
+                    padding: 29px 25px;
+                    border-radius: 8px;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #5ED299;
+                    transition: all 0.3s;
+                    &:hover{
+                        background: #5ED299;
+                        span{
+                            color: #fff;
+                        }
+                    }
+                    &:active{
+                        transform: scale(0.96);
+                    }
+                }
+                img{
+                    width: 24px;
+                    display: block;
+                    margin-right: 20px;
+                    transition: all 0.3s;
+                }
+                span{
+                    display: block;
+                    font-size: 15px;
+                    color: #000000;
+                    line-height: 21px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 20px 0 80px;
+        .reports_content{
+            h2 {
+                font-size: 44px;
+                line-height: 60px;
+                padding-left: 26px;
+                margin-bottom: 80px;
+                &::after{
+                    top: 9px;
+                    width: 6px;
+                    height: 45px;
+                }
+            }
+            ul{
+                margin: 0 -1.5%;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 47%;
+                    margin: 0 1.5% 20px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        
+    }
+    @media (min-width: 1320px) {
+        padding: 38px 0 100px; 
+        .reports_content {
+            h2 {
+                font-size: 58px;
+                line-height: 79px;
+                padding-left: 27px;
+                margin-bottom: 100px;
+                &::after {
+                    top: 18px;
+                }
+            }
+            ul {
+                margin: 0 1%;
+                li {
+                    width: 31.33%;
+                    margin: 0 1% 20px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1680px) {
+        padding: 38px 0 300px;
+        .reports_content{
+            padding: 0 120px;
+            h2{
+                font-size: 64px;
+                line-height: 87px;
+                &::after{
+                    top: 20px;
+                }
+            }
+            ul {
+                margin: 0 1%;
+                li {
+                    width: 23%;
+                    margin: 0 1% 20px;
+                    a{
+                        padding: 29px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
