@@ -438,6 +438,15 @@
                         opacity: 1;
                     }
                 }
+                a{
+                    z-index: 2;
+                    color: #ffffff;
+                    position: relative;
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #343434;
+                    }
+                }
             }
         }
     }

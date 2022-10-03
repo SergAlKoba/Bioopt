@@ -1094,6 +1094,13 @@
                         opacity: 1;
                     }
                 }
+                a{
+                    color: rgba(255, 255, 255, 0.5);
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #70e5b2;
+                    }
+                }
             }
         }
     }

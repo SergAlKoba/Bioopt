@@ -761,6 +761,15 @@
                         opacity: 1;
                     }
                 }
+                a{
+                    z-index: 2;
+                    position: relative;
+                    color: rgba(255, 255, 255, 0.5);
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #70e5b2;
+                    }
+                }
             }
         }
     }
