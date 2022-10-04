@@ -26,6 +26,8 @@ var $doc = $(document);
             $('.' + data_tabs).addClass('active');
         });
 
+        jcf.replaceAll();
+
     });
 
     $win.scroll(function() {
