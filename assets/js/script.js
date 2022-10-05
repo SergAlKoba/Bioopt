@@ -17,6 +17,26 @@ var $doc = $(document);
             $('.nav_mobile').removeClass('active');
         });
 
+        $('.close_popup').on('click', function(){
+            $('.popup').fadeOut();
+        });
+
+        $('.close').on('click', function(){
+            $('.popup').fadeOut();
+        });
+
+        $('.with_us_js').on('click', function(){
+            $('.with_us').fadeIn();
+        });
+
+        $('.retail_js').on('click', function(){
+            $('.retail').fadeIn();
+        });
+
+        $('.wholesale_js').on('click', function(){
+            $('.wholesale').fadeIn();
+        });
+
     });
 
     $win.scroll(function() {

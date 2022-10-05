@@ -13,7 +13,71 @@
 
 <body>
   <!-- Header -->
-  <div class="header_mobile">
+  <!-- Папап связь -->
+<div class="popup form_popup with_us" style="display: none;">
+    <span class="close"></span>
+    <div class="popup_content">
+        <span class="close_popup"></span>
+        <h4>Оставьте Ваши контакты</h4>
+        <p>И мы свяжемся с Вами </p>
+        <form action="">
+            <div class="items">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Телефон">
+            </div>
+            <button>Отправить</button>
+            <label for="checkbox"><input id="checkbox" type="checkbox">Нажимая на кнопку “Отправить” вы соглашаетесь с <a href="privacy-policy.html">Политикой конфиденциальности</a></label>
+        </form>
+    </div>
+</div>
+
+<!-- попап на товар в розницу -->
+<div class="popup form_popup retail" style="display: none;">
+    <span class="close"></span>
+    <div class="popup_content">
+        <span class="close_popup"></span>
+        <h4>Оставьте Ваши контакты</h4>
+        <p>И мы свяжемся с Вами </p>
+        <form action="">
+            <div class="items">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Телефон">
+            </div>
+            <button>Отправить</button>
+            <label for="checkbox"><input id="checkbox" type="checkbox">Нажимая на кнопку “Отправить” вы соглашаетесь с <a href="privacy-policy.html">Политикой конфиденциальности</a></label>
+        </form>
+    </div>
+</div>
+
+<!-- попап на товар оптовый -->
+<div class="popup form_popup wholesale" style="display: none;">
+    <span class="close"></span>
+    <div class="popup_content">
+        <span class="close_popup"></span>
+        <h4>Оставьте Ваши контакты</h4>
+        <p>И мы свяжемся с Вами </p>
+        <form action="">
+            <div class="items">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Телефон">
+            </div>
+            <button>Отправить</button>
+            <label for="checkbox"><input id="checkbox" type="checkbox">Нажимая на кнопку “Отправить” вы соглашаетесь с <a href="privacy-policy.html">Политикой конфиденциальности</a></label>
+        </form>
+    </div>
+</div>
+
+<div class="popup thanks_popup" style="display: none;">
+    <span class="close"></span> 
+    <div class="popup_content">
+        <span class="close_popup"></span>
+        <img src="img/thanks_popup.svg" alt="">
+        <h4>Оставьте Ваши контакты</h4>
+        <p>И мы свяжемся с Вами </p>
+    </div>
+</div>
+
+<div class="header_mobile">
     <div class="top_nav">
         <div class="container">
             <div class="header_top">
@@ -197,7 +261,7 @@
                             <span class="in_stock">В наличии</span>
                             <span style="display: none;" class="not_available">Нет в наличии</span>
                         </div>
-                        <a href="javascript:void(0)" class="order">Заказать</a>
+                        <a href="javascript:void(0)" class="order retail_js">Заказать</a>
                     </div>
                     <div class="filling_content">
                       <div class="tabs">
@@ -252,7 +316,7 @@
                       <div class="promo">
                         <h3>Купить товар оптом</h3>
                         <p>Вы можете заказать товар оптом и розницу</p>
-                        <a href="javascript:void()0">Купить</a>
+                        <a href="javascript:void(0)" class="wholesale_js">Купить</a>
                         <div class="img">
                           <img src="img/promo-img.png" alt="">
                         </div>
@@ -341,7 +405,7 @@
                         подсолнечника с 2020 года.</p>
                     <p>Счет высокого качества товаров и гибкой системы скидок зарекомендовала себя как надежный и перспективный 
                         партнер в области теплоснабжения.</p>
-                    <a href="javascript:void(0)">Связаться с нами</a>
+                    <a href="javascript:void(0)" class="with_us_js">Связаться с нами</a>
                 </div>
             </div>
             <div class="footer_menu">
