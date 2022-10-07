@@ -7,6 +7,8 @@ var $doc = $(document);
 
         // $('.products_item .img').height( $('.products_item .img').width() / 1.15);
 
+        jcf.replaceAll();
+
 
         $('.ways-item p').matchHeight({
             byRow: false

@@ -5,6 +5,8 @@ var $doc = $(document);
 
     $doc.ready(function(){
 
+        jcf.replaceAll();
+
         $('.products_item .img').height( $('.products_item .img').width() / 1.15);
 
         if($(window).width() >= 768){

@@ -5,7 +5,7 @@ var $doc = $(document);
 
     $doc.ready(function(){
 
-        
+        jcf.replaceAll();
 
     });
 

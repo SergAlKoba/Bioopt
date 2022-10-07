@@ -5,7 +5,11 @@ var $doc = $(document);
 
     $doc.ready(function(){
 
-        
+        jcf.replaceAll();
+
+        $('.star').fontstar({},function(value,self){
+            $('.value_star').text(value);
+        });
 
     });
 
