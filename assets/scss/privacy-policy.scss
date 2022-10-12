@@ -2,6 +2,46 @@
 
 .header{
     background: #333333;
+    .menu {
+        .cities {
+            ul{
+                background: #333333;
+                li{
+                    a{
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+        nav {
+            ul {
+                li {
+                    ul{
+                        background: #333333;
+                        li{
+                            a{
+                                color: #FFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tel_languages{
+        .languages {
+            li {
+                ul {
+                    background: #333333;
+                    li{
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .privacy_policy{
