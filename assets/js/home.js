@@ -7,7 +7,6 @@ var $doc = $(document);
 
         $('.range_slider').slick({
             dots: true,
-            arrows: false,
             slidesToShow: 2,
             slidesToScroll: 1,
             responsive: [

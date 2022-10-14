@@ -213,6 +213,31 @@
         .slick-list{
             padding: 0 10px;
         }
+        .slick-arrow{
+            top: -66px;
+            z-index: 4;
+            width: 40px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            text-indent: -9999px;
+            background: transparent;
+            transition: all  0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .slick-prev {
+            right: 65px;
+            background: url('../img/order_icon2.svg') no-repeat 50% 50%;
+            background-size: cover;
+        }
+        .slick-next {
+            right: 17px;
+            background: url('../img/order_icon.svg') no-repeat 50% 50%;
+            background-size: cover;
+        }
         .slick-slide{
             margin: 0 10px;
             .img{
@@ -303,7 +328,7 @@
             li{
                 margin: 0 5px;
                 button{
-                    width: 38px;
+                    width: 8px;
                     height: 2px;
                     border: none;
                     display: flex;
@@ -345,7 +370,7 @@
         .title {
             display: flex;
             align-items: center;
-            margin-bottom: 44px;
+            margin-bottom: 60px;
             justify-content: space-between;
             h2 {
                 font-size: 44px;
@@ -391,6 +416,15 @@
             }
         }
         .range_slider {
+            .slick-arrow {
+                top: -50px;
+            }
+            .slick-next {
+                right: 60px;
+            }
+            .slick-prev {
+                right: 110px;
+            }
             .slick-slide {
                 .img {
                     .text {
@@ -405,9 +439,6 @@
                 margin: 51px 0 0;
                 li {
                     margin: 0 7px;
-                    button {
-                        width: 53px;
-                    }
                 }
             }
         }
@@ -419,6 +450,13 @@
         .range_slider {
             .slick-list {
                 padding: 0 50px;
+            }
+            .slick-dots{
+                li{
+                    button{
+                        width: 53px;
+                    }
+                }
             }
         }
     }
@@ -447,6 +485,17 @@
         .range_slider{
             .slick-list {
                 padding: 0 90px;
+            }
+            .slick-arrow {
+                top: -75px;
+                width: 60px;
+                height: 60px;
+            }
+            .slick-next {
+                right: 100px;
+            }
+            .slick-prev {
+                right: 170px;
             }
             .slick-slide {
                 .img {
@@ -506,6 +555,17 @@
         .range_slider {
             .slick-list{
                 padding: 0 252px;
+            }
+            .slick-arrow {
+                top: -90px;
+                width: 64px;
+                height: 64px;
+            }
+            .slick-prev {
+                right: 340px;
+            }
+            .slick-next {
+                right: 260px;
             }
             .slick-slide {
                 margin: 0 4px;

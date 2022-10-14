@@ -179,7 +179,7 @@
             }
         }
         .footer_menu {
-            padding: 70px 50px;
+            padding: 70px 50px 50px;
             .logo {
                 margin-bottom: 58px;
             }
@@ -221,7 +221,7 @@
         }
         .footer_menu{
             width: 50%;
-            padding: 55px 0 55px 60px;
+            padding: 55px 0 55px 40px;
             &::after{
                 left: 0;
                 transform: translate(0, 0);
@@ -257,7 +257,7 @@
         }
         .footer_menu{
             width: 49%;
-            padding: 79px 0 55px 80px;
+            padding: 79px 0 35px 80px;
             .logo{
                 margin-bottom: 60px;
             }
@@ -276,6 +276,7 @@
                 justify-content: space-between;
                 p{
                     width: 40%;
+                    margin-bottom: 0;
                 }
                 a{
                     width: 40%;
@@ -314,7 +315,7 @@
         }
         .footer_menu {
             width: 42%;
-            padding: 110px 65px 110px 118px;
+            padding: 110px 65px 60px 118px;
         }
     }
 }
